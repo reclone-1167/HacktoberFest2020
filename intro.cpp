@@ -2,6 +2,13 @@
 using namespace std;
 
 
+
+int findmax(vector<int>arr){
+	int mx = INT_MIN;
+	for(int i=0; i<arr.size(); i++) mx = max(mx, arr[i]);
+	return mx;
+}
+
 int bs(vector<int>arr, int key){
 	int s = 0;
 	int e = arr.size();
